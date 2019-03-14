@@ -78,3 +78,9 @@ int MoreThanHalfNum_Solution(vector<int> numbers) {
 
     return (count > numbers.size()/2) ? result : 0;
 }
+
+int main(){
+    vector<int> n = {1,2,2,1,2,2,1};
+    int a = MoreThanHalfNum_Solution(n);
+    cout<<a;
+}
