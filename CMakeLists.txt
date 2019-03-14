@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 1_StringSort.cpp)
+add_executable(CODING 2_HalfArray.cpp)
