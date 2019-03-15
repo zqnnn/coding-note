@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 2_HalfArray.cpp)
+add_executable(CODING 3_MaxKNum.cpp)
