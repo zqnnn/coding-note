@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 4_max_subarray.cpp)
+add_executable(CODING 5_numberof1.cpp)
