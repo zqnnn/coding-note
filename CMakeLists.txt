@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 7_UglyNumber.cpp)
+add_executable(CODING 8_OnceNumber.cpp)
