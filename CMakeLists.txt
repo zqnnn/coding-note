@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 15_TwoNumberSum.cpp)
+add_executable(CODING 16_FindContinuousSequence.cpp)
