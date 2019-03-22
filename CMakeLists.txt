@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 19_IsContinuous.cpp)
+add_executable(CODING 20_LastRemaining_Solution.cpp)
