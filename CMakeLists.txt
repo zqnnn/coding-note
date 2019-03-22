@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 20_LastRemaining_Solution.cpp)
+add_executable(CODING 21_Sum_Solution.cpp)
