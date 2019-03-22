@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 18_ReverseSentence.cpp)
+add_executable(CODING 19_IsContinuous.cpp)
