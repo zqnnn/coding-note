@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 23_findMedianSortedArrays.cpp)
+add_executable(CODING 24_maxArea.cpp)
