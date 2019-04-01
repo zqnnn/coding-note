@@ -42,39 +42,26 @@ using namespace std;
 //, target = 6
 //输出: [-1,-1]
 
-//int search(vector<int> &nums, int target){
-//    int first = 0;
-//    int last = nums.size();
-//    while(first != last){
-//        int mid = (first + last) / 2;
-//        if(nums[mid] == target){
-//            return mid;
-//        }
-//        else if(nums[mid] < target){
-//            first = mid + 1;
-//        }
-//
-//        else
-//            last = mid;
-//
-//    }
-//    return  -1;
-//}
-//
-//
-//vector<int> searchRange(vector<int>& nums, int target) {
-//    int index = search(nums, target);
-//    if(index == -1)
-//        return {-1, -1};
-//    int i, j = index;
-//    if(i >= 0 && nums[i-1] == target){
-//        i--;
-//    }
-//    else if(j < nums.size()-1 && nums[j+1] == target){
-//        j++;
-//    }
-//    return {i, j};
-//}
+//这道题让我们在一个有序整数数组中寻找相同目标值的起始和结束位置，而且限定了时间复杂度为O(logn)，
+// 这是典型的二分查找法的时间复杂度，所以这道题也需要用此方法，我们的思路是首先对原数组使用二分查找法，
+// 找出其中一个目标值的位置，然后向两边搜索找出起始和结束的位置，代码如下：
+
+int search(vector<int>& nums, int left, int right, int target) {
+    if (left > right) return -1;
+    int mid = left + (right - left) / 2;
+    if (nums[mid] == target) return mid;
+    else if (nums[mid] < target) return search(nums, mid + 1, right, target);
+    else return search(nums, left, mid - 1, target);
+}
+vector<int> searchRange(vector<int>& nums, int target) {
+    int idx = search(nums, 0, nums.size() - 1, target);
+    if (idx == -1) return {-1, -1};
+    int left = idx, right = idx;
+    while (left > 0 && nums[left - 1] == nums[idx]) --left;
+    while (right < nums.size() - 1 && nums[right + 1] == nums[idx]) ++right;
+    return {left, right};
+}
+
 
 //按照二分法的思路，我们可以这样子设计：
 //
