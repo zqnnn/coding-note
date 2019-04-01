@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 25_3Sum.cpp)
+add_executable(CODING 26_removeDuplicates.cpp)
