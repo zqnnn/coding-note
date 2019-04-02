@@ -29,25 +29,58 @@ using namespace std;
 // 在当前两指针确定的范围内，先比较两头找出较小值，如果较小值是left指向的值，
 // 则从左向右扫描，如果较小值是right指向的值，则从右向左扫描，若遇到的值比当前较小值小，
 // 则将差值存入结果，如遇到的值大，则重新确定新的窗口范围，以此类推直至left和right指针重合。
+//class Solution {
+//public:
+//    int trap(vector<int>& height) {
+//        int res = 0, l = 0, r = height.size() - 1;
+//        while (l < r){
+//            int mn = min(height[l], height[r]);
+//            if(mn == height[l]){
+//                ++l;
+//                while (l < r && height[l] < mn){
+//                    res+= mn - height[l++];
+//                }
+//            }
+//            else{
+//                --r;
+//                while (l < r && height[r] < mn){
+//                    res += mn - height[r--];
+//                }
+//            }
+//        }
+//        return res;
+//    }
+//};
+
+
 class Solution {
 public:
     int trap(vector<int>& height) {
-        int res = 0, l = 0, r = height.size() - 1;
-        while (l < r){
-            int mn = min(height[l], height[r]);
-            if(mn == height[l]){
-                ++l;
-                while (l < r && height[l] < mn){
-                    res+= mn - height[l++];
-                }
-            }
-            else{
-                --r;
-                while (l < r && height[r] < mn){
-                    res += mn - height[r--];
-                }
-            }
+        int totalwater = 0;
+        int lmax = height[0];
+        int rmax = height[height.size()-1];
+        for(int i = 1; i < height.size()-1; i++){
+            for(int j = 0; j < i; j++)
+                lmax = max(lmax, height[j]);
+
+            for(int k = i+1; k < height.size()-1; k++)
+                rmax = max(rmax, height[k]);
+
+
+            int water_and_building = min(lmax, rmax);
+            int water = water_and_building - height[i];
+
+            totalwater += water;
         }
-        return res;
+
+        return totalwater;
+
+
     }
 };
+
+int main(){
+    vector<int> height = {0,1,0,2,1,0,1,3,2,1,2,1};
+    Solution s;
+    cout << s.trap(height);
+}
