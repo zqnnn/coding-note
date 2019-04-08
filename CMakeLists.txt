@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 32_spiralOrder.cpp)
+add_executable(CODING 33_JumpGame.cpp)
