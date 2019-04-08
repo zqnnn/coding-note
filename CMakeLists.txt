@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 31_RotateImage.cpp)
+add_executable(CODING 32_spiralOrder.cpp)
