@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING 33_JumpGame.cpp)
+add_executable(CODING test/2.cpp)
