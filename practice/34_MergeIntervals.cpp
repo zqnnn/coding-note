@@ -44,6 +44,39 @@ vector<vector<int>> merge(vector<vector<int>>& intervals) {
 
 }
 
+class Solution {
+public:
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        vector<vector<int>> results;
+
+        sort(intervals.begin(), intervals.end(), [](auto& i1, auto& i2){return i1[0]<i2[0];});
+
+        for (int i = 0; i < intervals.size(); ++i) {
+            // Can't overlap case
+            if (i+1 == intervals.size()) {
+                results.push_back(intervals[i]);
+                continue;
+            }
+
+            int& lo1 = intervals[i][0];
+            int& hi1 = intervals[i][1];
+            int& lo2 = intervals[i+1][0];
+            int& hi2 = intervals[i+1][1];
+
+            // Not overlapping case
+            if (lo2 > hi1) {
+                results.push_back(intervals[i]);
+                continue;
+            }
+
+            // Overlaps
+            lo2 = lo1;
+            hi2 = max(hi1,hi2);
+        }
+
+        return results;
+    }
+};
 
 int main(){
     vector<vector<int>> intervals = {{1,3}, {2,6}, {6,10}, {15,18}};
