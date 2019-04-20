@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/34_MergeIntervals.cpp)
+add_executable(CODING practice/35_AddTwoNumbers.cpp)
