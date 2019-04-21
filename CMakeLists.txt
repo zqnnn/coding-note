@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/35_AddTwoNumbers.cpp)
+add_executable(CODING practice/36_lengthOfLongestSubstring.cpp)
