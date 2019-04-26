@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/39_ValidPalindrome.cpp)
+add_executable(CODING practice/40_StringtoInteger.cpp)
