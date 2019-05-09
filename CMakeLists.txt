@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/48_ValidParentheses.cpp)
+add_executable(CODING practice/48_ValidParentheses.cpp practice/49_mergeTwoLists.cpp)
