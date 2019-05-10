@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/50_mergeKLists.cpp)
+add_executable(CODING practice/51_strStr.cpp)
