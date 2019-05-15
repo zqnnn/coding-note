@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/53_isValidSudoku.cpp)
+add_executable(CODING practice/54_countAndSay.cpp)
