@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/55_WildcardMatching.cpp)
+add_executable(CODING practice/56_Permutations.cpp)
