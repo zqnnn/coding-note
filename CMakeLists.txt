@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/56_Permutations.cpp)
+add_executable(CODING practice/57_GroupAnagrams.cpp)
