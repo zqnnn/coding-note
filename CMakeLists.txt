@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/59_plusOne.cpp)
+add_executable(CODING practice/60_mySqrt.cpp)
