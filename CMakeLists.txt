@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/61_IntersectionofTwoArrays.cpp)
+add_executable(CODING practice/62_climbStairs.cpp)
