@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/64_SortColors.cpp)
+add_executable(CODING practice/65_Subsets.cpp)
