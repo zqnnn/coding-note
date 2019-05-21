@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/26_removeDuplicates.cpp)
+add_executable(CODING practice/68_RemoveDuplicatesfromSortedArrayII.cpp)
