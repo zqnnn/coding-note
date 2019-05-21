@@ -58,10 +58,27 @@ int removeDuplicates(vector<int>& nums) {
     return length;
 }
 
-int main(){
-    vector<int> num = {1,1,2};
-    cout << removeDuplicates(num)<<endl;
-    for(int i = 0; i < num.size(); i++){
-        cout << num[i] << endl;
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int index = 1, last = 1;
+        for(int i = 0; i < nums.size() - 1; i++){
+            if(nums[i] != nums[i + 1]){
+                index++;
+                nums[index] = nums[i+1];
+            }
+        }
+        return index;
     }
+};
+
+int main(){
+    vector<int> num = {0,0,1,1,1,2,2,3,3,4};
+//    cout << removeDuplicates(num)<<endl;
+////    for(int i = 0; i < num.size(); i++){
+////        cout << num[i] << endl;
+////    }
+
+    Solution s;
+    cout << s.removeDuplicates(num);
 }
