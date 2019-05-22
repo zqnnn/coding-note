@@ -49,7 +49,35 @@ int search(vector<int>& nums, int target) {
 }
 
 
+int searchrotate(vector<int> &nums, int target){
+    int first = 0, last = nums.size();
+    while (first < last){
+        int mid = (first + last) / 2;
+        if(nums[mid] == target)
+            return mid;
+        if(nums[first] < nums[mid]){
+            if(nums[mid] > target && nums[first] <= target){
+                last = mid;
+            }
+            else{
+                first = mid + 1;
+            }
+        }
+        else{
+            if(nums[mid] < target && nums[last-1] >= target){
+                first = mid + 1;
+            }
+            else{
+                last = mid;
+            }
+        }
+    }
+    return -1;
+}
+
+
 int main(){
-    vector<int> num = {5,1,3};
-    cout << search(num, 3)<<endl;
+    vector<int> num = {4,5,6,7,0,1,2};
+    cout << search(num, 1)<<endl;
+    cout << searchrotate(num, 1)<<endl;
 }
