@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/71_MergeSortedArray.cpp)
+add_executable(CODING practice/71_MergeSortedArray.cpp practice/72_DecodeWays.cpp)
