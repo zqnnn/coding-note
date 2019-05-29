@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/80_ConvertSortedArraytoBinarySearchTree.cpp practice/81_PopulatingNextRightPointersinEachNode.cpp)
+add_executable(CODING practice/82_Pascal'sTriangle.cpp)
