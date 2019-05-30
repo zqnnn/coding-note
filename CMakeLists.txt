@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/84_BestTimetoBuyandSellStockII.cpp)
+add_executable(CODING practice/84_BestTimetoBuyandSellStockII.cpp practice/85_BinaryTreeMaximumPathSum.cpp)
