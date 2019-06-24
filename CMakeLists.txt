@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/91_SingleNumber.cpp)
+add_executable(CODING practice/91_SingleNumber.cpp practice/92_CopyListwithRandomPointer.cpp)
