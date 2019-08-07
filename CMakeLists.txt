@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/100_MaximumProductSubarray.cpp)
+add_executable(CODING practice/101_MinStack.cpp)
