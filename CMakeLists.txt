@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/98_MaxPointsOnALine.cpp)
+add_executable(CODING practice/99_EvaluateReversePolishNotation.cpp)
