@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/105_MajorityElement.cpp)
+add_executable(CODING practice/106_ExcelSheetColumnNumber.cpp)
