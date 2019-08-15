@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/103_FindPeakElement.cpp)
+add_executable(CODING practice/103_FindPeakElement.cpp practice/104_FractiontoRecurringDecimal.cpp)
