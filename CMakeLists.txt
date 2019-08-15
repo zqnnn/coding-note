@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/106_ExcelSheetColumnNumber.cpp)
+add_executable(CODING practice/107_FactorialTrailingZeroes.cpp)
