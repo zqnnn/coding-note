@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/107_FactorialTrailingZeroes.cpp practice/108_LargestNumber.cpp)
+add_executable(CODING practice/109_RotateArray.cpp)
