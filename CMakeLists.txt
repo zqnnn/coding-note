@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/112_HouseRobber.cpp)
+add_executable(CODING practice/113_NumberofIslands.cpp)
