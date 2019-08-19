@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/109_RotateArray.cpp)
+add_executable(CODING practice/111_Numberof1Bits.cpp)
