@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING  practice/115_HappyNumber.cpp)
+add_executable(CODING practice/116_CountPrimes.cpp)
