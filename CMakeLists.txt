@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/116_CountPrimes.cpp practice/117_CourseSchedule.cpp practice/118_ImplementTrie.cpp)
+add_executable(CODING practice/119_CoinChange.cpp)
