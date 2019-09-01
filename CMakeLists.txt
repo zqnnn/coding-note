@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/120_CourseScheduleII.cpp practice/121_WordSearchII.cpp practice/122_KthLargestElementinanArray.cpp practice/123_ContainsDuplicate.cpp)
+add_executable(CODING practice/124_BasicCalculatorII.cpp)
