@@ -3,4 +3,4 @@ project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CODING practice/132_Findvector2nd.cpp)
+add_executable(CODING test/AIQIYI.cpp practice/133_replaceSpace.cpp)
